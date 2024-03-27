@@ -122,12 +122,12 @@ items.addEventListener('click', event => {
 
 btns.addEventListener('click', event => {
     const btn = event.target;
+    if (!(btn.classList.contains('buttons__btn'))) return
+
     btnsFilter.forEach(item => {
         item.classList.remove('active');
     })
     btn.classList.add('active');
-
-    if (!(btn.classList.contains('buttons__btn'))) return
 
     if (btn.id) {
         clearAll();

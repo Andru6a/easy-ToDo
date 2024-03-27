@@ -13,9 +13,6 @@ html {
 
 body {
     height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
@@ -35,6 +32,7 @@ button {
     background: #00000063;
     border: solid 1px;
     border-radius: 10px;
+    margin: 150px auto 0;
 }
 
 .todo {}
@@ -169,4 +167,32 @@ button {
 
 .active{
     color: rgb(255, 255, 255);
+}
+
+@media (max-width:620px) {
+    .wrapper{
+        width: 90%;
+        max-width: 90%;
+        margin: 100px auto 0;
+    }
+    .buttons__inner{
+        gap: 5px;
+    }
+    .buttons__btn{
+        font-size: 16px;
+    }
+
+    .tasks__inner{
+        font-size: 20px;
+    }
+
+    .tasks__task input{
+    }
+}
+
+@media (max-width:385px) {
+    .wrapper{
+        width: 300px;
+        max-width: 300px;
+    }
 }
