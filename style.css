@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 550px;
+    width: 550px;
+    padding: 10px;
+    background: #00000063;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.todo {}
+
+.todo__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff9d00;
+    margin-bottom: 20px;
+}
+
+.input__inner {
+    margin-bottom: 15px;
+    background-color: #ffffff2c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input__inner svg {
+    margin-left: 10px;
+    width: 35px;
+    height: 30px;
+}
+
+.input__inner svg path {
+    fill: #ffffff5e;
+}
+
+.input__text {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 5px 5px 5px 10px;
+    font-family: inherit;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+}
+
+.input__text::placeholder {
+    color: #ffffff5e;
+    font-size: 24px;
+}
+
+.input__text:focus-visible {
+    outline: none;
+}
+
+
+.buttons__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    border-bottom: 1px solid #ff9d00;
+    ;
+    padding-bottom: 15px;
+}
+
+.buttons__btn {
+    background: transparent;
+    border: none;
+    color: #8a8a8a;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.buttons__btn:last-child {
+    margin-right: 0;
+}
+
+.tasks__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.tasks__task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tasks__task p {
+    overflow: hidden;
+    max-width: 465px;
+}
+
+.tasks__task input {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    appearance: none;
+    flex-shrink: 0;
+}
+
+.tasks__task input:checked {
+    accent-color: rgb(102, 0, 255);
+    appearance: checkbox;
+}
+
+.options {
+    background: transparent;
+    background: url('./img/trash_bin_icon-icons.com_67981.svg') 0 0 no-repeat;
+    width: 23px;
+    height: 23px;
+    border: none;
+    font-size: 24px;
+    transform: translateY(-15%);
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.options img {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.active{
+    color: rgb(255, 255, 255);
+}
